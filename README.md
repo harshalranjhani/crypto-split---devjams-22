@@ -4,6 +4,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
+<h3>Project submitted in Devjams 2022</h3>
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="./icon/crypto.svg" alt="Logo" width="80" height="80">
@@ -32,6 +33,7 @@ Wallet for all by all.
   <summary>Table of Contents</summary>
   <ol>
     <li>
+      <a href="#tracks-applied">Track's applied</a></li><li>
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
@@ -52,6 +54,18 @@ Wallet for all by all.
 
 
 <!-- ABOUT THE PROJECT -->
+
+## Track's applied
+
+1. Friend's and Family
+2. Best use of github
+3. Use of appwrite
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
 ## About The Project
 
 
