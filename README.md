@@ -55,7 +55,7 @@ Wallet for all by all.
 ## About The Project
 
 
-The project is based on Multiple signature wallet for friends and families. Allowing for smooth transaction process integrated with chat rooms and video call facilities to discuss the agenda .
+The project is based on Multiple signature wallet for friends and families. Allowing for smooth transaction process integrated with chat room facilities to discuss the agenda .
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -137,11 +137,11 @@ The project can be used in friends and family groups to smoothly and transparent
 <!-- CONTACT -->
 ## Contact
 
-Samarth Saxena - email@example.com
+Samarth Saxena - samarthsaxena1672003@gmail.com
 
-Harshal Ranjhani - email@example.com
+Harshal Ranjhani - ranjhaniharshal@gmail.com
 
-Harshit Singh - email@example.com
+Harshit Singh - send2harshit@gmail.com
 
 Project Link: [https://github.com/harshalranjhani/crypto-split---devjams-22](https://github.com/harshalranjhani/crypto-split---devjams-22)
 
