@@ -2,12 +2,14 @@
 
 # dependencies
 /node_modules
+/hardhat-stuff/node_modules
 /.pnp
+/server/node_modules
 .pnp.js
 
 # testing
 /coverage
-
+/hardhat-stuff/hardhat.config.js
 # production
 /build
 
