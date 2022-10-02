@@ -10,9 +10,11 @@ import { Query } from "appwrite";
 import { useSelector } from "react-redux";
 import { uiActions } from "../../store/ui-slice";
 import { etherActions } from "../../store/ether-slice";
-
+import { OwnerAddress, ContractAddress, ContractAbi } from "../../constants";
+import { useAccount, useContract, useProvider, useSigner } from "wagmi";
 
 function Dashboard() {
+  const { address, isConnected } = useAccount();
   const [userDetails, setUserDetails] = useState({});
   const [userEthData, setUserEthData] = useState({});
   const successMessage = useSelector((state) => state.ui.successMessage);
@@ -39,6 +41,9 @@ function Dashboard() {
     }
   }, []);
 
+  const { data: signer } = useSigner();
+  const provider = useProvider();
+
   const getBalance = async (account) => {
     console.log(account);
     const balance = await window.ethereum.request({
@@ -47,6 +52,29 @@ function Dashboard() {
     });
     return balance;
   };
+  const contract = useContract({
+    addressOrName: ContractAddress,
+    contractInterface: ContractAbi,
+    signerOrProvider: signer || provider,
+  });
+  async function ownerChecker() {
+    const check = await contract.getOwners();
+    console.log(check);
+  }
+
+  async function txChecker() {
+    const txcheck = await contract.getTransactionCount();
+    console.log(txcheck);
+  }
+
+  async function submitTransaction() {
+    const submit = await contract.submitTransaction(
+      "0xbd3e5a92e0d5f8b2015147353d3f21c0b958d67d",
+      10000000000,
+      []
+    );
+    console.log(submit);
+  }
 
   const connectWalletHandler = async () => {
     // const accounts = window.ethereum
@@ -151,6 +179,16 @@ function Dashboard() {
         onClick={disconnectWallet}
       >
         Disconnect Wallet
+      </Button>
+      <Button sx={{ marginTop: "" }} variant="contained" onClick={ownerChecker}>
+        {" "}
+        Check Owners
+      </Button>
+      <Button sx={{ marginTop: "" }} variant="contained" onClick={txChecker}>
+        Transaction Count{" "}
+      </Button>
+      <Button sx={{ marginTop: "" }} variant="contained" onClick={submitTransaction}>
+        Submit a Transaction{" "}
       </Button>
       <br></br>
       <br></br>

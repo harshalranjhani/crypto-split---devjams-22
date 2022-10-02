@@ -75,7 +75,7 @@ contract MultiSigWallet {
     function submitTransaction(
         address _to,
         uint _value,
-        bytes memory _data
+        bytes memory _data  
     ) public onlyOwner {
         uint txIndex = transactions.length;
 
@@ -122,6 +122,10 @@ contract MultiSigWallet {
         );
 
         transaction.executed = true;
+                (bool success, ) = transaction.to.call{value: transaction.value}(
+            transaction.data
+        );
+        require(success, "tx failed");
 
         emit ExecuteTransaction(msg.sender, _txIndex);
     }

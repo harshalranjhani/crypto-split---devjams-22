@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { uiActions } from "./store/ui-slice";
 import '@rainbow-me/rainbowkit/styles.css';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import {useProvider , useSigner , useContract } from "wagmi"
 
 
 import {
