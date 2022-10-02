@@ -9,7 +9,7 @@
 
 # testing
 /coverage
-/hardhat-stuff/scripts/deploy.js
+/hardhat-stuff/hardhat.config.js
 # production
 /build
 
