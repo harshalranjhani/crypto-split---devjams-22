@@ -5,8 +5,11 @@
 
 
 
+
 <!-- PROJECT LOGO -->
 <br />
+
+<h3>Project submitted in Devjams 2022</h3>
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="./icon/crypto.svg" alt="Logo" width="80" height="80">
@@ -35,10 +38,11 @@ Wallet for all by all.
   <summary>Table of Contents</summary>
   <ol>
     <li>
+
+      <a href="#tracks-applied">Track's applied</a></li><li>
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="#project-stats">Project Stats</a></li>
       </ul>
     </li>
     <li>
@@ -56,10 +60,22 @@ Wallet for all by all.
 
 
 <!-- ABOUT THE PROJECT -->
+
+## Track's applied
+
+1. Friend's and Family
+2. Best use of github
+3. Use of appwrite
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
 ## About The Project
 
 
-The project is based on Multiple signature wallet for friends and families. Allowing for smooth transaction process integrated with chat rooms and video call facilities to discuss the agenda .
+The project is based on Multiple signature wallet for friends and families. Allowing for smooth transaction process integrated with chat room facilities to discuss the agenda .
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -94,6 +110,8 @@ ProJect completed succesfully with::
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+=======
+
 
 
 
@@ -121,6 +139,7 @@ To setting up project locally follow these simple example steps.
 
 For all installations related to the project
 
+
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
@@ -134,6 +153,15 @@ For all installations related to the project
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
+=======
+1. Installing appwrite
+   ```sh
+   docker run -it --rm \
+    --volume /var/run/docker.sock:/var/run/docker.sock \
+    --volume "$(pwd)"/appwrite:/usr/src/code/appwrite:rw \
+    --entrypoint="install" \
+    appwrite/appwrite:1.0.1
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,9 +170,8 @@ For all installations related to the project
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+The project can be used in friends and family groups to smoothly and transparently perform transactions with the agreement of the majority using the multi-sig wallet.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,12 +180,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- CONTACT -->
 ## Contact
 
-Your Name - Samarth Saxena - email@example.com
-Your Name - Harshal Ranjhani - email@example.com
-Your Name - Harshit Singh - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Samarth Saxena - samarthsaxena1672003@gmail.com
 
+Harshal Ranjhani - ranjhaniharshal@gmail.com
+
+Harshit Singh - send2harshit@gmail.com
+
+Project Link: [https://github.com/harshalranjhani/crypto-split---devjams-22](https://github.com/harshalranjhani/crypto-split---devjams-22)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -167,6 +196,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
@@ -196,3 +226,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+
+message.txt
+8 KB
+
